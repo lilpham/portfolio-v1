@@ -3,10 +3,22 @@
   @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i');
 }
 
+body {
+  padding: 8px;
+  background: #d2b29696;
+}
+
 h1, h2, h3 h4, p, a {
   font-family: 'Roboto Mono', monospace; 
   font-weight: 300;
   color: #72431A;
+}
+h2 {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+p {
+  font-size: 0.9rem;
 }
 
 a {
@@ -19,6 +31,7 @@ a {
   text-align: center;
   background-color: #F4ECE9;
   position: relative;
+  padding: 0 40px;
 }
 
 .App-logo {
@@ -143,7 +156,7 @@ a {
 
 .stamp {
   position: absolute;
-  left: -22px;
+  left: -35px;
   z-index: 10;
   bottom: 46%;
 }
@@ -173,7 +186,6 @@ a {
 
 .App-about {
   background: #DBC5B9;
-  min-height: 80vh;
 }
 
 .App-about .App-subtitle {
@@ -242,6 +254,62 @@ a {
   position: relative;
   left: 30%;
   top: -299px;
+}
+
+.bio {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: left;
+  grid-column-gap: 46px;
+  margin: -180px 100px 0;
+  padding: 50px 0 100px 0;
+}
+
+.App-web .App-subtitle {
+  transform: rotate(-90deg);
+  position: sticky;
+  top: 92%;
+  margin-left: 94%;
+}
+.App-web .App-subtitle:after {
+  background: #72431a;
+  width: 100%;
+  height: 2px;
+  position: relative;
+  content: "";
+  display: block;
+  left: 74px;
+  top: -9px;
+  z-index: -1;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-gap: 6rem 5rem;
+  text-align: left;
+}
+
+.projects p {
+  width: 80%;
+}
+
+.App-contact .App-subtitle {
+  transform: rotate(-90deg);
+  position: sticky;
+  top: 92%;
+  margin-left: 94%;
+}
+.App-contact .App-subtitle:after {
+  background: #72431a;
+  width: 100%;
+  height: 2px;
+  position: relative;
+  content: "";
+  display: block;
+  left: 74px;
+  top: -9px;
+  z-index: -1;
 }
 
 .spin {

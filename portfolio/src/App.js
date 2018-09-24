@@ -3,11 +3,13 @@ import logo from "./logo.svg";
 import stamp from "./stamp.svg";
 import squiggly from "./squiggly.svg";
 import squiggly2 from "./squiggly2.svg";
+import headshot from "./headshot.jpg";
 import "./App.css";
 import "./App.scss";
 import ReallySmoothScroll from 'really-smooth-scroll'
 import ScrollableAnchor from 'react-scrollable-anchor'
 import Draggable from 'react-draggable';
+import InstagramEmbed from 'react-instagram-embed'
 
 ReallySmoothScroll.shim();
 
@@ -15,6 +17,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+
         <header className="App-header">
           <div className="App-social">
             <a className="highlightbkg-y" href="mailto:llp@lillianlepham.com" target="_blank" rel="noopener noreferrer">EMAIL</a>
@@ -38,50 +41,131 @@ class App extends Component {
             </div>
           </div>
         </header>
+
         <div className="stamp">
           <div id="circle"></div>
           <img src={stamp} className="stamp spin" alt="stamp" />
         </div>
+
         <ScrollableAnchor id={'about'}>
           <div className="App-about">
             <h1 className="App-subtitle">about</h1>
             <p className="pt50">let's see if you know me - drag the words and fill in the blanks</p>
             <img src={squiggly2} className="squiggly2" alt="vector line" />
-            <h1 className="App-intro">hi, my name is _________! <br></br>i'm addicted to ________,<br></br>
-            absolutely love ________,<br></br> and enjoy ________!</h1>
-            <Draggable>
-              <p className="drag" id="lillian">lillian</p>
-            </Draggable>
-            <Draggable>
-              <p className="drag" id="cheetos">hot cheetos</p>
-            </Draggable>
-            <Draggable>
-              <p className="drag" id="stories">stories</p>
-            </Draggable>
-            <Draggable>
-              <p className="drag" id="yoga">yoga</p>
-            </Draggable>
-            <Draggable>
-              <p className="drag" id="exploring">exploring</p>
-            </Draggable>
-            <Draggable>
-              <p className="drag" id="coconut">coconut water</p>
-            </Draggable>
-            <Draggable>
-              <p className="drag" id="lilly">lilly</p>
-            </Draggable>
-            <Draggable>
-              <p className="drag" id="documenting">documenting everything</p>
-            </Draggable>
+
+              <h1 className="App-intro">hi, my name is _________! <br></br>i'm addicted to ________,<br></br>
+              absolutely love ________,<br></br> and enjoy ________!</h1>
+              <Draggable>
+                <p className="drag" id="lillian">lillian</p>
+              </Draggable>
+              <Draggable>
+                <p className="drag" id="cheetos">hot cheetos</p>
+              </Draggable>
+              <Draggable>
+                <p className="drag" id="stories">stories</p>
+              </Draggable>
+              <Draggable>
+                <p className="drag" id="yoga">yoga</p>
+              </Draggable>
+              <Draggable>
+                <p className="drag" id="exploring">exploring</p>
+              </Draggable>
+              <Draggable>
+                <p className="drag" id="coconut">coconut water</p>
+              </Draggable>
+              <Draggable>
+                <p className="drag" id="lilly">lilly</p>
+              </Draggable>
+              <Draggable>
+                <p className="drag" id="documenting">documenting everything</p>
+              </Draggable>
+
+            <div className="bio">
+              <div className="bio-info">
+                <p>My passion lies at the intersection of creative design and pragmatic web development. I
+                strive to create meaningful and engaging digital experiences that are captivating and sustainable.<br></br>
+                p.s. - i’m always down for a boba or coffee hang. </p>
+              </div>
+              <div className="bio-img">
+                <img src={headshot} className="headshot" alt="lillian pham headshot" />
+              </div>
+            </div>
           </div>
         </ScrollableAnchor>
+
         <ScrollableAnchor id={'web'}>
           <div className="App-web">
-          </div>
+            <h1 className="App-subtitle">web</h1>
+            <div className="projects">
+
+              <div className="project">
+                <div className="project-title">
+                  <h2>The Mojito Bar</h2>
+                  <p>Built on WordPress during my time at The Brand Collective, it displays the restaurant's new brandy in a
+                  playful and interactive manner with layered elements along, vibrant colors, and patterns.</p> 
+                </div>
+                <div className="project-img">
+                </div>
+              </div>
+
+              <div className="project">
+                <div className="project-title">
+                  <h2>H Design Group</h2>
+                  <p>Built on WordPress during my time at The Brand Collective, it displays the restaurant's new brandy in a
+                  playful and interactive manner with layered elements along, vibrant colors, and patterns.</p> 
+                </div>
+                <div className="project-img">
+                </div>
+              </div>
+
+              <div className="project">
+                <div className="project-title">
+                  <h2>ALMA Wedding</h2>
+                  <p>Built on WordPress during my time at The Brand Collective, it displays the restaurant's new brandy in a
+                  playful and interactive manner with layered elements along, vibrant colors, and patterns.</p> 
+                </div>
+                <div className="project-img">
+                </div>
+              </div>
+
+              <div className="project">
+                <div className="project-title">
+                  <h2>Olivia</h2>
+                  <p>Built on WordPress during my time at The Brand Collective, it displays the restaurant's new brandy in a
+                  playful and interactive manner with layered elements along, vibrant colors, and patterns.</p> 
+                </div>
+                <div className="project-img">
+                </div>
+              </div>
+
+              <div className="project">
+                <div className="project-title">
+                  <h2>Beloved</h2>
+                  <p>Built on WordPress during my time at The Brand Collective, it displays the restaurant's new brandy in a
+                  playful and interactive manner with layered elements along, vibrant colors, and patterns.</p> 
+                </div>
+                <div className="project-img">
+                </div>
+              </div>
+
+            </div>
+
+          </div> 
         </ScrollableAnchor>
+
+        <ScrollableAnchor id={'contact'}>
         <div className="App-contact">
+          <h1 className="App-subtitle">contact</h1>
+          <p>lorem ipsum</p>
+          <p>lorem ipsum</p>
+          <p>lorem ipsum</p>
+          <p>lorem ipsum</p>
+
         </div>
+        </ScrollableAnchor>
+
       </div>
+
       
     );
   }
