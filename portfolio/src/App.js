@@ -38,7 +38,6 @@ class App extends Component {
           </div>
         </header>
         <div className="App-about">
-          <h1 className="about-subtitle">about –––</h1>
         </div>
         <div className="App-web">
         </div>
