@@ -12,6 +12,9 @@ h1, h2, h3 h4, p, a {
 a {
   text-decoration: none !important;
 }
+.pt50 {
+  padding: 50px 0 0 0;
+}
 .App {
   text-align: center;
   background-color: #F4ECE9;
@@ -26,6 +29,7 @@ a {
 .App-header {
   padding: 60px;
   color: white;
+  min-height: 60vh;
 }
 
 .App-social {
@@ -116,6 +120,7 @@ a {
 .col {
   padding: 50px;
   display: inline-grid;
+  grid-gap: 10px;
 }
 
 @media (max-width: 414px) {
@@ -129,7 +134,6 @@ a {
   }
 }
 
-
 .highlight-yellow:hover {
   color: #DDB26D;
 }
@@ -137,10 +141,11 @@ a {
   color: #A2B1C1;
 }
 
-
 .stamp {
   position: absolute;
   left: -22px;
+  z-index: 10;
+  bottom: 46%;
 }
 .stamp img {
   position: relative;
@@ -164,6 +169,79 @@ a {
   width: 30%;
   transform: rotate(-18deg);
   z-index: 0;
+}
+
+.App-about {
+  background: #DBC5B9;
+  min-height: 80vh;
+}
+
+.App-about .App-subtitle {
+  transform: rotate(-90deg);
+  position: sticky;
+  top: 92%;
+  margin-left: 94%;
+}
+
+.App-about .App-subtitle:after {
+  background: #72431a;
+  width: 100%;
+  height: 2px;
+  position: relative;
+  content: "";
+  display: block;
+  left: 74px;
+  top: -9px;
+  z-index: -1;
+}
+.App-about .App-intro {
+  line-height: 50px;
+  padding: 50px;
+}
+.drag {
+  font-weight: 700;
+  font-style: italic;
+}
+
+#lillian {
+  position: relative;
+  left: 40%;
+  top: -208px;
+}
+#cheetos {
+  position: relative;
+  left: -42%;
+  top: -108px;
+}
+#stories {
+  position: relative;
+  left: -5%;
+  top: -50px;
+}
+#yoga {
+  position: relative;
+  left: -26%;
+  top: -333px;
+}
+#exploring {
+  position: relative;
+  left: 17%;
+  top: -322px;
+}
+#coconut {
+  position: relative;
+  left: -21%;
+  top: -333px;
+}
+#lilly {
+  position: relative;
+  left: -37%;
+  top: -397px;
+}
+#documenting {
+  position: relative;
+  left: 30%;
+  top: -299px;
 }
 
 .spin {

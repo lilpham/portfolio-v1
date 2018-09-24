@@ -2,9 +2,14 @@ import React, { Component } from "react";
 import logo from "./logo.svg";
 import stamp from "./stamp.svg";
 import squiggly from "./squiggly.svg";
+import squiggly2 from "./squiggly2.svg";
 import "./App.css";
 import "./App.scss";
+import ReallySmoothScroll from 'really-smooth-scroll'
+import ScrollableAnchor from 'react-scrollable-anchor'
+import Draggable from 'react-draggable';
 
+ReallySmoothScroll.shim();
 
 class App extends Component {
   render() {
@@ -32,20 +37,56 @@ class App extends Component {
               <a className="highlight-blue" href="https://www.instagram.com/lilphammy" target="_blank">06. insta</a>
             </div>
           </div>
-          <div className="stamp">
-            <div id="circle"></div>
-            <img src={stamp} className="stamp spin" alt="stamp" />
-          </div>
         </header>
-        <div className="App-about">
+        <div className="stamp">
+          <div id="circle"></div>
+          <img src={stamp} className="stamp spin" alt="stamp" />
         </div>
-        <div className="App-web">
-        </div>
+        <ScrollableAnchor id={'about'}>
+          <div className="App-about">
+            <h1 className="App-subtitle">about</h1>
+            <p className="pt50">let's see if you know me - drag the words and fill in the blanks</p>
+            <img src={squiggly2} className="squiggly2" alt="vector line" />
+            <h1 className="App-intro">hi, my name is _________! <br></br>i'm addicted to ________,<br></br>
+            absolutely love ________,<br></br> and enjoy ________!</h1>
+            <Draggable>
+              <p className="drag" id="lillian">lillian</p>
+            </Draggable>
+            <Draggable>
+              <p className="drag" id="cheetos">hot cheetos</p>
+            </Draggable>
+            <Draggable>
+              <p className="drag" id="stories">stories</p>
+            </Draggable>
+            <Draggable>
+              <p className="drag" id="yoga">yoga</p>
+            </Draggable>
+            <Draggable>
+              <p className="drag" id="exploring">exploring</p>
+            </Draggable>
+            <Draggable>
+              <p className="drag" id="coconut">coconut water</p>
+            </Draggable>
+            <Draggable>
+              <p className="drag" id="lilly">lilly</p>
+            </Draggable>
+            <Draggable>
+              <p className="drag" id="documenting">documenting everything</p>
+            </Draggable>
+          </div>
+        </ScrollableAnchor>
+        <ScrollableAnchor id={'web'}>
+          <div className="App-web">
+          </div>
+        </ScrollableAnchor>
         <div className="App-contact">
         </div>
       </div>
+      
     );
   }
 }
 
+
 export default App;
+
