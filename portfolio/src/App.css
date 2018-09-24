@@ -1,0 +1,186 @@
+@font-face {
+  font-family: 'Roboto';
+  @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i');
+}
+
+h1, h2, h3 h4, p, a {
+  font-family: 'Roboto Mono', monospace; 
+  font-weight: 300;
+  color: #72431A;
+}
+
+a {
+  text-decoration: none !important;
+}
+.App {
+  text-align: center;
+  background-color: #F4ECE9;
+  position: relative;
+}
+
+.App-logo {
+  max-width: 100%;
+  height: 60px;
+}
+
+.App-header {
+  padding: 60px;
+  color: white;
+}
+
+.App-social {
+  display:  inline-block;
+  position: absolute;
+  top: 22px;
+  right: 0;
+  z-index: 1;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+.App-social a {
+  margin: 0 14px;
+}
+
+.highlightbkg-y {
+  top: 0;
+  left: 0;
+  position: relative;
+  transform: translateX(-50%);
+  display: inline-block;
+  height: 0px;
+  -webkit-transition: color 1s;
+  transition: color 1s;
+}
+.highlightbkg-y:after {
+  background: #DDB26D;
+  width: 0px;
+  height: 18px;
+  position: relative;
+  content:"";
+  display: block;
+  transition: all 200ms ease-in-out;
+  top: -18px;
+  z-index: -1;
+}
+.highlightbkg-y:hover {
+  color: #fff;
+}
+.highlightbkg-y:hover:after {
+  width: 110%;
+}
+
+.highlightbkg-b {
+  top: 0;
+  left: 0;
+  position: relative;
+  transform: translateX(-50%);
+  display: inline-block;
+  height: 0px;
+  -webkit-transition: color 1s;
+  transition: color 1s;
+}
+.highlightbkg-b:after {
+  background: #A2B1C1;
+  width: 0px;
+  height: 18px;
+  position: relative;
+  content:"";
+  display: block;
+  transition: all 200ms ease-in-out;
+  top: -18px;
+  z-index: -1;
+}
+.highlightbkg-b:hover {
+  color: #fff;
+}
+.highlightbkg-b:hover:after {
+  width: 110%;
+}
+
+.App-intro {
+  font-size: 1em;
+  padding-bottom: 40px;
+  letter-spacing: 1px;
+  padding-top: 100px;
+}
+
+.App-subtitle {
+  font-size: 1em;
+}
+
+.App-menu {
+  text-align: left;
+  display: flex;
+  justify-content: center;
+}
+.col {
+  padding: 50px;
+  display: inline-grid;
+}
+
+@media (max-width: 414px) {
+  .App-menu {
+    display: flex;
+    justify-content: space-between !important;
+    padding-top: 50px;
+  }
+  .col {
+    padding: 0 !important;
+  }
+}
+
+
+.highlight-yellow:hover {
+  color: #DDB26D;
+}
+.highlight-blue:hover {
+  color: #A2B1C1;
+}
+
+
+.stamp {
+  position: absolute;
+  left: -22px;
+}
+.stamp img {
+  position: relative;
+  left: 0;
+  top: -72px;
+}
+
+#circle {
+  position: relative;
+  background: transparent;
+  border-radius: 100%;
+  border: 2px solid #A2B1C1;
+  width:90px;
+  height:90px;
+}
+
+.squiggly {
+  position: absolute;
+  left: 70%;
+  top: 6%;
+  width: 30%;
+  transform: rotate(-18deg);
+  z-index: 0;
+}
+
+.spin {
+  -webkit-animation: rotation 20s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+    from {
+        -webkit-transform: rotate(40deg);
+    }
+    to {
+        -webkit-transform: rotate(1059deg);
+    }
+}
+
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
