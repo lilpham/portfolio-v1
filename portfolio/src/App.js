@@ -4,14 +4,22 @@ import stamp from "./stamp.svg";
 import squiggly from "./squiggly.svg";
 import squiggly2 from "./squiggly2.svg";
 import headshot from "./headshot.jpg";
+import themojitobar from "./themojitobar.gif";
+import mojitobar from "./mojitobar.png";
 import "./App.css";
 import "./App.scss";
 import ReallySmoothScroll from 'really-smooth-scroll'
 import ScrollableAnchor from 'react-scrollable-anchor'
 import Draggable from 'react-draggable';
 import InstagramEmbed from 'react-instagram-embed'
+import $ from 'jquery'
 
 ReallySmoothScroll.shim();
+
+$("img", "#project-img").hover(function() {
+  $('.png').toggle();
+  $('.gif').toggle();
+});
 
 class App extends Component {
   render() {
@@ -81,13 +89,14 @@ class App extends Component {
               </Draggable>
 
             <div className="bio">
+              <div className="bio-img">
+              <h1 className="App-headers">oh,hey</h1>
+                <img src={headshot} className="headshot" alt="lillian pham headshot" />
+              </div>
               <div className="bio-info">
                 <p>My passion lies at the intersection of creative design and pragmatic web development. I
                 strive to create meaningful and engaging digital experiences that are captivating and sustainable.<br></br>
-                p.s. - i’m always down for a boba or coffee hang. </p>
-              </div>
-              <div className="bio-img">
-                <img src={headshot} className="headshot" alt="lillian pham headshot" />
+                <br></br>p.s. - i’m always down for a boba or coffee hang. </p>
               </div>
             </div>
           </div>
@@ -101,6 +110,10 @@ class App extends Component {
               <div className="project">
                 <div className="project-title">
                   <h2>The Mojito Bar</h2>
+                  <div id="project-img">
+                    <img src={mojitobar} className="png" alt="the mojitobar project" />
+                    <img src={themojitobar} className="gif" alt="the mojitobar project" />
+                  </div>
                   <p>Built on WordPress during my time at The Brand Collective, it displays the restaurant's new brandy in a
                   playful and interactive manner with layered elements along, vibrant colors, and patterns.</p> 
                 </div>
