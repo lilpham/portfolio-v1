@@ -6,6 +6,7 @@ import squiggly2 from "./squiggly2.svg";
 import headshot from "./headshot.jpg";
 import themojitobar from "./themojitobar.gif";
 import mojitobar from "./mojitobar.png";
+import cursor from "./cursor.png";
 import "./App.css";
 import "./App.scss";
 import ReallySmoothScroll from 'really-smooth-scroll'
@@ -58,11 +59,11 @@ class App extends Component {
         <ScrollableAnchor id={'about'}>
           <div className="App-about">
             <h1 className="App-subtitle">about</h1>
-            <p className="pt50">let's see if you know me - drag the words and fill in the blanks</p>
+            <p className="pt50">let's see if you know me - drag the words and fill in the blanks<br></br><br></br>p.s. - i'll send you $1 if you screenshot and send your answers to me</p>
             <img src={squiggly2} className="squiggly2" alt="vector line" />
-
-              <h1 className="App-intro">hi, my name is _________! <br></br>i'm addicted to ________,<br></br>
-              absolutely love ________,<br></br> and enjoy ________!</h1>
+            <div className="draggable-aboutme">
+              <h1 className="App-intro">hi, my name is _________ <br></br>i'm addicted to ________,<br></br>
+              absolutely love ________<br></br> wholeheartedly enjoy ________</h1>
               <Draggable>
                 <p className="drag" id="lillian">lillian</p>
               </Draggable>
@@ -87,7 +88,7 @@ class App extends Component {
               <Draggable>
                 <p className="drag" id="documenting">documenting everything</p>
               </Draggable>
-
+            </div>
             <div className="bio">
               <div className="bio-img">
               <h1 className="App-headers">oh,hey</h1>
@@ -95,8 +96,9 @@ class App extends Component {
               </div>
               <div className="bio-info">
                 <p>My passion lies at the intersection of creative design and pragmatic web development. I
-                strive to create meaningful and engaging digital experiences that are captivating and sustainable.<br></br>
-                <br></br>p.s. - i’m always down for a boba or coffee hang. </p>
+                strive to create meaningful and engaging digital experiences.<br></br>
+                <button>Let's Chat</button></p>
+
               </div>
             </div>
           </div>

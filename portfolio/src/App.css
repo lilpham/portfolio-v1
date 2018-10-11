@@ -24,6 +24,9 @@ p {
 a {
   text-decoration: none !important;
 }
+a, button {
+  cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAMAAAC6V+0/AAAACVBMVEX///8AAAD///9+749PAAAAAXRSTlMAQObYZgAAAEdJREFUeAF90FEKgDAMwFDT+x9awYCRwjL282CM9joFsGie/swYy6oiENW8RaJ5PBvxvCpqxfwetTOqeyo+Rgx3JjnrCxNa3TwuAY6NyoMhAAAAAElFTkSuQmCC),auto;  
+}
 .pt50 {
   padding: 50px 0 0 0;
 }
@@ -32,6 +35,7 @@ a {
   background-color: #F4ECE9;
   position: relative;
   padding: 0 40px;
+  cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAaCAMAAABigZc2AAAACVBMVEX///8AAAD///9+749PAAAAAXRSTlMAQObYZgAAAFpJREFUeNp9jUEOwEAIAhn+/+imjbs1bC0XzQioSUAAYZs0mcVY051RbGXfFsyxibTVHXhuhXYlbuRGPbe7kz3g0wf679OuizDBdCaberLE4AsjGliD02eNugA+MQFAPqynHQAAAABJRU5ErkJggg==),auto;
 }
 
 .App-logo {
@@ -143,6 +147,25 @@ a {
   grid-gap: 10px;
 }
 
+button {
+  background: transparent;
+  border: solid 2px #fff;
+  padding: 10px 38px;
+  color: #fff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: 'Roboto';
+  box-shadow: 8px 8px 0px #f4ece9;
+}
+button:hover {
+  background: #f4ece9;
+  border: solid 2px #a1b1c1;
+  color: #a1b1c1;
+  box-shadow: 8px 8px 0px #dac5b9;
+  transition: all 200ms ease-in-out;
+}
+
 @media (max-width: 414px) {
   .App-menu {
     display: flex;
@@ -221,26 +244,35 @@ a {
   font-weight: 700;
   font-style: italic;
 }
+.drag {
+  background: #a0b1c2;
+  color: white;
+  width: 18%;
+  cursor: move;
+}
+.drag:hover {
+  background: #a0b1c2a6;
+}
 
 #lillian {
   position: relative;
-  left: 40%;
-  top: -208px;
+  left: 71%;
+  top: -285px;
 }
 #cheetos {
   position: relative;
-  left: -42%;
+  left: 4%;
   top: -108px;
 }
 #stories {
   position: relative;
-  left: -5%;
+  left: 31%;
   top: -50px;
 }
 #yoga {
   position: relative;
-  left: -26%;
-  top: -333px;
+  left: 30%;
+  top: -384px;
 }
 #exploring {
   position: relative;
@@ -249,17 +281,17 @@ a {
 }
 #coconut {
   position: relative;
-  left: -21%;
+  left: 67%;
   top: -333px;
 }
 #lilly {
   position: relative;
-  left: -37%;
-  top: -397px;
+  left: 4%;
+  top: -481px;
 }
 #documenting {
   position: relative;
-  left: 30%;
+  left: 77%;
   top: -299px;
 }
 
@@ -271,6 +303,10 @@ a {
   margin: -180px 100px 0;
   padding: 50px 0 100px 0;
 }
+.bio h1 {
+  position: relative;
+  top: 4%;
+}
 .bio-info p {
   background-color: #A2B1C1;
   color: #fff;
@@ -278,6 +314,9 @@ a {
   position: relative;
   top: 125px;
   left: -138px;
+}
+.bio-info button {
+  margin-top: 14px;
 }
 .bio-img img {
   width: 90%;
