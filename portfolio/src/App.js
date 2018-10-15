@@ -40,7 +40,7 @@ class App extends Component {
           <div className="App-menu">
             <div className="col">
               <a className="highlight-yellow" href="#about" rel="noopener noreferrer">01. about</a>
-              <a className="highlight-blue" href="#web" rel="noopener noreferrer">02. web</a>
+              <a className="highlight-blue" href="#web" rel="noopener noreferrer">02. work</a>
               <a className="highlight-yellow" href="#contact" rel="noopener noreferrer">03. contact</a>
             </div>
             <div className="col">
@@ -91,13 +91,13 @@ class App extends Component {
             </div>
             <div className="bio">
               <div className="bio-img">
-              <h1 className="App-headers">oh,hey</h1>
+              <h1 className="App-headers highlightbkg-y">oh,hey</h1>
                 <img src={headshot} className="headshot" alt="lillian pham headshot" />
               </div>
               <div className="bio-info">
                 <p>My passion lies at the intersection of creative design and pragmatic web development. I
                 strive to create meaningful and engaging digital experiences.<br></br>
-                <button>Let's Chat</button></p>
+                <a href='mailto:llp@lillianlepham.com'><button>Let's Chat</button></a></p>
 
               </div>
             </div>
@@ -106,7 +106,7 @@ class App extends Component {
 
         <ScrollableAnchor id={'web'}>
           <div className="App-web">
-            <h1 className="App-subtitle">web</h1>
+            <h1 className="App-subtitle">work</h1>
             <div className="projects">
 
               <div className="project">
@@ -171,11 +171,8 @@ class App extends Component {
         <ScrollableAnchor id={'contact'}>
         <div className="App-contact">
           <h1 className="App-subtitle">contact</h1>
-          <p>lorem ipsum</p>
-          <p>lorem ipsum</p>
-          <p>lorem ipsum</p>
-          <p>lorem ipsum</p>
-
+          <h1 className="App-headers highlightbkg-p">wanna collaborate?</h1><br></br>
+          <a href='mailto:llp@lillianlepham.com'><button>Let's Chat</button></a>
         </div>
         </ScrollableAnchor>
 

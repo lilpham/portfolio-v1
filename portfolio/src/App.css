@@ -34,7 +34,7 @@ a, button {
   text-align: center;
   background-color: #F4ECE9;
   position: relative;
-  padding: 0 40px;
+  padding: 40px 40px;
   cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAaCAMAAABigZc2AAAACVBMVEX///8AAAD///9+749PAAAAAXRSTlMAQObYZgAAAFpJREFUeNp9jUEOwEAIAhn+/+imjbs1bC0XzQioSUAAYZs0mcVY051RbGXfFsyxibTVHXhuhXYlbuRGPbe7kz3g0wf679OuizDBdCaberLE4AsjGliD02eNugA+MQFAPqynHQAAAABJRU5ErkJggg==),auto;
 }
 
@@ -44,7 +44,7 @@ a, button {
 }
 
 .App-header {
-  padding: 60px;
+  padding: 100px;
   color: white;
   min-height: 60vh;
 }
@@ -94,8 +94,38 @@ a, button {
   color: #fff;
 }
 .highlightbkg-y:hover:after {
-  width: 110%;
+  width: 100%;
 }
+
+
+.highlightbkg-p {
+  top: 0;
+  left: 0;
+  position: relative;
+  transform: translateX(0%);
+  display: inline-block;
+  height: 0px;
+  -webkit-transition: color 1s;
+  transition: color 1s;
+}
+.highlightbkg-p:after {
+  background: #DBC5B9;
+  width: 0px;
+  height: 18px;
+  position: relative;
+  content:"";
+  display: block;
+  transition: all 200ms ease-in-out;
+  top: -18px;
+  z-index: -1;
+}
+.highlightbkg-p:hover {
+  color: #fff;
+}
+.highlightbkg-p:hover:after {
+  width: 100%;
+}
+
 
 .highlightbkg-b {
   top: 0;
@@ -129,7 +159,7 @@ a, button {
   font-size: 1em;
   padding-bottom: 40px;
   letter-spacing: 1px;
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
 .App-subtitle {
@@ -147,7 +177,7 @@ a, button {
   grid-gap: 10px;
 }
 
-button {
+.bio-info button {
   background: transparent;
   border: solid 2px #fff;
   padding: 10px 38px;
@@ -157,8 +187,9 @@ button {
   font-size: 14px;
   font-family: 'Roboto';
   box-shadow: 8px 8px 0px #f4ece9;
+  text-decoration: none !important;
 }
-button:hover {
+.bio-info button:hover {
   background: #f4ece9;
   border: solid 2px #a1b1c1;
   color: #a1b1c1;
@@ -188,7 +219,7 @@ button:hover {
   position: absolute;
   left: -35px;
   z-index: 10;
-  bottom: 68%;
+  bottom: 82%;
 }
 .stamp img {
   position: relative;
@@ -216,6 +247,7 @@ button:hover {
 
 .App-about {
   background: #DBC5B9;
+  padding-bottom: 100px;
 }
 
 .App-about .App-subtitle {
@@ -321,6 +353,9 @@ button:hover {
 .bio-img img {
   width: 90%;
 }
+.App-web {
+  padding-bottom: 100px;
+}
 .App-web .App-subtitle {
   transform: rotate(-90deg);
   position: sticky;
@@ -357,7 +392,11 @@ button:hover {
   display: none;
 }
 
-
+.App-contact {
+  border: solid 2px #dac5b9;
+  box-shadow: 8px 8px 0px #dac5b9;
+  padding-bottom: 60px;
+}
 
 .App-contact .App-subtitle {
   transform: rotate(-90deg);
@@ -375,6 +414,29 @@ button:hover {
   left: 74px;
   top: -9px;
   z-index: -1;
+}
+.App-contact .App-headers {
+  color: #A2B1C1;
+}
+.App-contact button {
+  background: #f4ece9;
+  border: solid 2px #a1b1c1;
+  padding: 10px 38px;
+  color: #a1b1c1;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: 'Roboto';
+  box-shadow: 8px 8px 0px #dac5b9;
+  text-decoration: none !important;
+  margin-top: 50px;
+}
+.App-contact button:hover {
+  background: transparent;
+  border: solid 2px #dac5b9;
+  color: #dac5b9;
+  box-shadow: 8px 8px 0px #dac5b9;
+  transition: all 200ms ease-in-out;
 }
 
 .spin {
