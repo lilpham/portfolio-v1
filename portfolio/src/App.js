@@ -174,7 +174,7 @@ class App extends Component {
                   <div id="project-img">
                     <a href="http://www.belovedapp.co/" target="_blank" rel="nofollow noopener noreferrer"><img src={beloved} className="png" alt="Beloved app screenshot" /></a>
                   </div>
-                  <p>Built on Ruby on Rails in 2 weeks for my final project at Ironhack. A wedding planning application built and designed for the modern millennial. The Beloved application integrates streamlined planning features such as a budgeter, guest list organizer, and checklists. Beloved also generates monthly tasks based on the user’s wedding date and sends out task reminders via e-mail and SMS messages.</p> 
+                  <p>Built on Ruby on Rails in 2 weeks for my final project at Ironhack; this is a wedding planning application designed for the modern millennial. The Beloved application integrates streamlined planning features such as a budgeter, guest list organizer, and checklists. Beloved also generates monthly tasks based on the user’s wedding date and sends out task reminders via e-mail and/or SMS messages.</p> 
                 </div>
                 <div className="project-img">
                 </div>

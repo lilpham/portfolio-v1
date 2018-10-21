@@ -184,7 +184,7 @@ a, button {
   letter-spacing: 1px;
   text-transform: uppercase;
   font-size: 14px;
-  font-family: 'Roboto';
+  font-family: 'Roboto' !important;
   box-shadow: 8px 8px 0px #f4ece9;
   text-decoration: none !important;
 }
@@ -478,14 +478,27 @@ a, button {
     padding: 0 !important;
     min-height: 60vh !important;
   }
+  .App-social a {
+    margin: 0;
+  }
   .App-social {
-    right: 32px !important;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-evenly;
+    width: 85%;
   }
   .stamp {
-    bottom: 89.6% !important;
+    display: none;
   }
   .App {
     padding: 40px 20px !important;
+  }
+  .App-logo {
+    position: relative;
+    left: 4vh;
+  }
+  .App-subtitle {
+    z-index: 2;
   }
   .squiggly {
     display: none;
@@ -493,13 +506,22 @@ a, button {
   .squiggly2 {
     width: 86%;
   }
-  .App-subtitle {
+  .App-about .App-subtitle,
+  .App-web .App-subtitle,
+  .App-contact . App-subtitle {
     display: none;
+  }
+  .App-about {
+    background-color: transparent;
+    padding-bottom: 50px;
   }
   .bio {
     grid-template-columns: 1fr;
     margin: 0 !important;
     padding: 0 !important;
+  }
+  .bio h1 {
+    color: #825731;
   }
   .bio-img img {
     margin-left: -10px !important;
@@ -508,17 +530,28 @@ a, button {
     position: relative;
     top: -48px !important;
     left: 11px !important;
+    padding: 10%;
   }
   .projects {
     grid-gap: 0 !important;
-  }
-  #project-img {
-    padding-top: 14px !important;
-  }
-  #project-img img {
-    width: 76% !important;
+    display: block !important;
   }
   .draggable-aboutme {
     display: none !important;
+  }
+  .App-contact .App-headers {
+    font-size: 30px;
+    padding-top: 40px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+  html {
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    width: 100vh;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
   }
 }
