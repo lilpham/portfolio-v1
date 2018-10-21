@@ -21,11 +21,10 @@ p {
   font-size: 0.9rem;
 }
 
-a {
-  text-decoration: none !important;
-}
 a, button {
   cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAMAAAC6V+0/AAAACVBMVEX///8AAAD///9+749PAAAAAXRSTlMAQObYZgAAAEdJREFUeAF90FEKgDAMwFDT+x9awYCRwjL282CM9joFsGie/swYy6oiENW8RaJ5PBvxvCpqxfwetTOqeyo+Rgx3JjnrCxNa3TwuAY6NyoMhAAAAAElFTkSuQmCC),auto;  
+  text-decoration: none !important;
+  outline: none !important;
 }
 .pt50 {
   padding: 50px 0 0 0;
@@ -46,7 +45,7 @@ a, button {
 .App-header {
   padding: 100px;
   color: white;
-  min-height: 60vh;
+  min-height: 44vh;
 }
 
 .App-social {
@@ -138,7 +137,7 @@ a, button {
   transition: color 1s;
 }
 .highlightbkg-b:after {
-  background: #A2B1C1;
+  background: #dac5b9;
   width: 0px;
   height: 18px;
   position: relative;
@@ -149,7 +148,7 @@ a, button {
   z-index: -1;
 }
 .highlightbkg-b:hover {
-  color: #fff;
+  color: #72431A;
 }
 .highlightbkg-b:hover:after {
   width: 110%;
@@ -356,6 +355,10 @@ a, button {
 .App-web {
   padding-bottom: 100px;
 }
+.App-web .App-headers {
+  color: #dac5b9 !important;
+  text-align: left;
+}
 .App-web .App-subtitle {
   transform: rotate(-90deg);
   position: sticky;
@@ -386,11 +389,18 @@ a, button {
 }
 
 #project-img img {
-  cursor: pointer;
+  width: 90%;
+  padding-top: 20px;
 }
-#project-img .gif {
-  display: none;
+#project-img img:hover {
+  opacity: .8;
 }
+
+.projects .highlightbkg-b {
+  transform: translateX(0);
+}
+
+
 
 .App-contact {
   border: solid 2px #dac5b9;
@@ -452,8 +462,63 @@ a, button {
     }
 }
 
-
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+@media (min-width: 1024px) {
+  .bio-info {
+    width: 120%;
+  }
+}
+
+@media (max-width: 414px) {
+  .App-header {
+    padding: 0 !important;
+    min-height: 60vh !important;
+  }
+  .App-social {
+    right: 32px !important;
+  }
+  .stamp {
+    bottom: 89.6% !important;
+  }
+  .App {
+    padding: 40px 20px !important;
+  }
+  .squiggly {
+    display: none;
+  }
+  .squiggly2 {
+    width: 86%;
+  }
+  .App-subtitle {
+    display: none;
+  }
+  .bio {
+    grid-template-columns: 1fr;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .bio-img img {
+    margin-left: -10px !important;
+  }
+  .bio-info p {
+    position: relative;
+    top: -48px !important;
+    left: 11px !important;
+  }
+  .projects {
+    grid-gap: 0 !important;
+  }
+  #project-img {
+    padding-top: 14px !important;
+  }
+  #project-img img {
+    width: 76% !important;
+  }
+  .draggable-aboutme {
+    display: none !important;
+  }
 }
