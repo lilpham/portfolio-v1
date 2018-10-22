@@ -467,9 +467,25 @@ a, button {
   to { transform: rotate(360deg); }
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 768px) {
+  .bio {
+    margin: 0 !important;
+    padding: 0px 0 100px 0;
+  }
   .bio-info {
-    width: 120%;
+    width: 128%;
+  }
+  .stamp {
+    bottom: 85%;
+  }
+}
+@media (max-width: 1024px) {
+  .App-header {
+    padding: 0;
+    min-height: 36vh;
+  }
+  .bio-info {
+    width: 144%;
   }
 }
 
